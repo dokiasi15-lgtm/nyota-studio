@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ArrowDownRight, ArrowLeft, ArrowRight, ArrowUpRight, Check, ChevronDown, Globe2, Menu, X } from 'lucide-react'
+import { ArrowDownRight, ArrowLeft, ArrowRight, ArrowUpRight, Check, ChevronDown, Globe2, Menu, Sparkles, X } from 'lucide-react'
 import * as THREE from 'three'
 import './style.css'
 
