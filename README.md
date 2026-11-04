@@ -1,31 +1,29 @@
 # NYOTA STUDIO
 
-Responsive bilingual studio site built with React + Vite.
+A bilingual React + Vite studio site with an interactive Three.js feature, real portfolio captures, expandable service descriptions, and a guided project request form.
 
 ## Run locally
 
-```sh
+~~~sh
 npm install
 npm run dev
-```
+~~~
 
-## Build and preview
+## Production build
 
-```sh
+~~~sh
 npm run build
 npm run preview
-```
+~~~
 
-## GitHub Pages base path
+## Project request handoff
 
-Set `VITE_BASE` to the repository path before building. For a repository called `nyota-studio`, use `/nyota-studio/`. For a custom domain or a user/organization Pages repository, use `/`. Example in PowerShell:
+The order form is static and does not store submissions on a server. It opens WhatsApp or the visitor's mail app with the project details filled in; the visitor reviews the message and presses Send to submit it. To change the studio's contact details, update EMAIL and WHATSAPP in src/main.jsx.
 
-```powershell
-$env:VITE_BASE='/nyota-studio/'; npm run build
-```
+## GitHub Pages
 
-The generated site is in `dist/`. A manual GitHub Actions workflow is included at `.github/workflows/deploy.yml`. In the repository's **Settings → Pages**, set the source to **GitHub Actions**. Then run **Deploy NYOTA STUDIO to GitHub Pages** from the **Actions** tab when you choose to publish. The workflow uses the repository name as the base path; for a custom domain, change the `VITE_BASE` value in the workflow to `/`. Nothing is published until you manually run that workflow.
+The repository includes .github/workflows/deploy.yml. In GitHub, set **Settings → Pages → Source** to **GitHub Actions**, then manually run **Deploy NYOTA STUDIO to GitHub Pages** from the **Actions** tab.
 
-## Before launch
+For a repository site, the workflow sets VITE_BASE from the repository name. For a custom domain or a user/organization site, set VITE_BASE to / in the workflow file.
 
-Replace the marked contact placeholder in `src/main.jsx` with a real email address or contact link. The two portfolio items are labeled as personal projects. The descriptive copy only claims Blender modeling and GLB export, based on the project owner's notes.
+The site and the two portfolio case studies are public. Keep project claims accurate and present the two portfolios as personal projects.
